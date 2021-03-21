@@ -1,13 +1,18 @@
-import "./App.css";
+import Contador from "./components/Contador";
 import Eventos from "./components/Eventos";
+import Formulario from "./components/Formulario";
+import Listas from "./components/Listas";
 import Variables from "./components/Variables";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container mt-5">
       <h1>Hola mundo React</h1>
-      <Variables />
+      {/* <Variables />
       <Eventos />
+      <Contador /> */}
+      {/* <Listas /> */}
+      <Formulario />
     </div>
   );
 }

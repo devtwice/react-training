@@ -1,16 +1,19 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 
 const Eventos = () => {
-  const eventoClick = () => {
-    console.log("le has dado al click");
+  const [texto, setTexto] = useState("Texto viejo");
+
+  const cambiarTexto = () => {
+    setTexto("Texto nuevo");
   };
 
   return (
-    <div>
+    <Fragment>
       <hr />
       <h2>Eventos</h2>
-      <button onClick={() => eventoClick()}>Click</button>
-    </div>
+      <p>Texto cambiado : {texto}</p>
+      <button onClick={() => cambiarTexto()}>Cambiar texto</button>
+    </Fragment>
   );
 };
 

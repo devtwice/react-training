@@ -7,8 +7,8 @@ const Variables = () => {
   return (
     <div>
       <h2>Nuevo componente {saludo}</h2>
-      <div>
-        <img style={{ width: "40%" }} src={imagen} alt="" />
+      <div style={{ width: "70%", margin: "auto" }}>
+        <img style={{ width: "20%" }} src={imagen} alt="" />
       </div>
     </div>
   );
